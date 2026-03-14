@@ -1,0 +1,41 @@
+# ⚙️ DockForge: Global Mission Configuration
+# This file declares the desired state for all forgeable payloads.
+
+version: "1.0"
+
+# --- Global Defaults ---
+defaults:
+  min_ram_gb: 16
+  health_check_attempts: 30
+  health_check_interval_sec: 5
+
+# --- Payload Matrix ---
+applications:
+  - id: "java-atsea"
+    name: "AtSea Shop"
+    blueprint: "atsea-sample-shop-app.Dockerfile"
+    path: "app/atsea-sample-shop-app"
+    compose_file: "docker-compose-dev.yml"
+    endpoint: "http://localhost:8080"
+    description: "Enterprise Java Spring Boot commerce demo with NGINX and PostgreSQL"
+    requirements:
+      - "openssl"
+      - "docker-v2"
+
+  - id: "rust-dashboard"
+    name: "Rust Dashboard"
+    blueprint: "rust_dashboard_app.Dockerfile"
+    path: "app/rust_dashboard_app"
+    compose_file: "docker-compose.yml"
+    endpoint: "http://localhost:3999"
+    description: "High-performance Leptos SSR Dashboard with SurrealDB persistence"
+    requirements:
+      - "docker-v2"
+
+  - id: "generic-java"
+    name: "Generic Java Template"
+    blueprint: "java.Dockerfile"
+    path: "app/atsea-sample-shop-app" # Fallback for demo
+    compose_file: "docker-compose-dev.yml"
+    endpoint: "http://localhost:8080"
+    description: "Standard Java blueprint for generic service synthesis"
