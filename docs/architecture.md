@@ -62,3 +62,4 @@ A declarative schema that defines the "desired state" of each application, inclu
 # researched: https://github.com/WhiteSponge/rust_dashboard_app/
 # researched: https://github.com/dockersamples/atsea-sample-shop-app.git
 # researched: https://github.com/WhiteSponge/rust_dashboard_app/
+# researched: https://github.com/dockersamples/atsea-sample-shop-app.git
