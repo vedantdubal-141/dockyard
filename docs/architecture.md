@@ -61,3 +61,4 @@ A declarative schema that defines the "desired state" of each application, inclu
 ≽(◕ ‿ ◕)≼ *DockForge: Building the Future, One Container at a Time.*
 # researched: https://github.com/WhiteSponge/rust_dashboard_app/
 # researched: https://github.com/dockersamples/atsea-sample-shop-app.git
+# researched: https://github.com/WhiteSponge/rust_dashboard_app/
