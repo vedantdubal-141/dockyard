@@ -1,4 +1,6 @@
-# dockyard# DockForge
+# dockyard
+
+# DockForge
 
 A small DevOps experiment focused on **automating application environments using Docker**.
 
@@ -163,4 +165,3 @@ To add a new application to the engine:
 
 - [Architecture Guide](./docs/architecture.md)
 - [Workflow Deep-Dive](./docs/workflow.md)
-# final polish v1
