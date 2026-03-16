@@ -242,3 +242,4 @@ fi
 # payload discovery logic
 # signal trap for clean exit
 # radar logic
+# radar logic v2
