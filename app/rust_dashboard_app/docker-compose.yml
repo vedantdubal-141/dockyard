@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  database:
+    image: surrealdb/surrealdb:latest
+    command: start --log trace --user root --pass root memory
+    ports:
+      - "8000:8000"
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - LEPTOS_SITE_ADDR=0.0.0.0:3999
+      - SURREALDB_URL=ws://database:8000
+    ports:
+      - "3999:3999"
+    depends_on:
+      - database
