@@ -23,3 +23,4 @@ CMD ["--spring.profiles.active=postgres"]
 # patch: migrating to eclipse-temurin for alpine stability
 // switched to eclipse-temurin for better alpine compatibility
 // alpine compatibility patch
+// alpine compatibility patch v1
