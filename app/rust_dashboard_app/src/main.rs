@@ -66,3 +66,4 @@ pub fn main() {
 }
 // enabled wasm_js for getrandom support
 // crate feature adjustment
+// crate feature adjustment v1
