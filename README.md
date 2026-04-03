@@ -161,7 +161,7 @@ To add a new application to the engine:
 
 ---
 
-## Documentation
+## Documentationc
 
 - [Architecture Guide](./docs/architecture.md)
 - [Workflow Deep-Dive](./docs/workflow.md)

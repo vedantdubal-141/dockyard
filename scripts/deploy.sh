@@ -6,11 +6,16 @@
 set -e
 
 # --- Configuration & Variables ---
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PARENT_DIR="$(dirname "$SCRIPT_DIR")"
+cd "$PARENT_DIR"
+
 MIN_RAM_GB=16
 DOCS_DIR="docs"
 CONFIG_FILE="config/dockforge.yml"
 BLUEPRINT_DIR="dockerfiles"
 APP_DIR="app"
+
 
 # --- Emojis (The Fancy & Human Collection) ---
 EMOJI_BANNER="┌[ ∵ ]┘ DOCKFORGE DEPLOYMENT ENGINE └[ ∵ ]┐"
@@ -26,7 +31,7 @@ EMOJI_COFFEE="☕"
 EMOJI_FIRE="🔥"
 EMOJI_RADAR="📡"
 
-# --- Global State ---
+# ---                                                                                                                                                                                                                                                                                                                                                                                                                                           Global State ---
 APP_NAMES=()
 APP_PATHS=()
 APP_COMPOSE=()
