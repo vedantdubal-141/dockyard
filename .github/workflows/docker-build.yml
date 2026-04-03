@@ -1,5 +1,14 @@
 name: DockForge CI
 
+
+
+
+
+
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 on:
   push:
     branches: [ main, master ]
@@ -11,7 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        blueprint: [atsea-shop, rust-dashboard]
+        blueprint: [atsea-sample-shop-app, rust_dashboard_app]
+
     
     steps:
       - name: Checkout Blueprint
